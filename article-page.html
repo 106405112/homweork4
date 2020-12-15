@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework4</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Roboto', 'Noto Sans TC';
+        }
+
+        #header {
+            padding-top: 20px;
+            padding-left: 20px;
+            height: 80px;
+            background-color: #F1F1F1;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            width: 300px;
+            display: inline-block;
+            vertical-align: middle;
+            box-sizing: border-box;
+        }
+
+        .dp-inlineblock {
+            display: inline-block;
+            padding-left: 38px;
+            padding-right: 37px;
+            padding-top: 30px;
+            width: 375px;
+            height: 300px;
+            box-sizing: border-box;
+            background-color: #FFFFFF;
+            margin-left: 0px;
+            margin-bottom: 20px;
+        }
+
+        .hamburger {
+            padding-top: 10px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .hamburger>div {
+            width: 28px;
+            height: 3px;
+            margin-bottom: 10px;
+            background-color: #C71B0A;
+            box-sizing: border-box;
+        }
+
+        .link-top {
+            width: 300px;
+            height: 15px;
+            border-top: solid #D0D0D0 1px;
+            border-right: solid #D0D0D0 1px;
+            margin-left: 40px;
+            margin-bottom: 34px;
+            box-sizing: border-box;
+        }
+
+        .link-bottom {
+            width: 300px;
+            height: 15px;
+            border-bottom: solid #D0D0D0 1px;
+            border-right: solid #D0D0D0 1px;
+            margin-left: 40px;
+            margin-bottom: 23px;
+            box-sizing: border-box;
+        }
+
+        .distance {
+            margin-bottom: 60px
+        }
+
+
+        .logo {
+            display: inline-block;
+            width: 290px;
+        }
+
+        .share {
+            padding-left: 40px;
+            padding-right: 10px;
+        }
+
+        .share2 {position:absolute;
+        left:49px;
+        top:580px;
+        }
+
+        .share2>div{display: inline-block;
+            margin-right: 13px;
+            margin-top: 23px;
+            margin-bottom: 80px;
+            width: 30px;
+            height: 30px;}
+
+        .share>div {
+            display: inline-block;
+            margin-right: 13px;
+            margin-top: 23px;
+            margin-bottom: 80px;
+            width: 36px;
+            height: 36px;
+        }
+
+        h1 {
+            width: 350px;
+            height: 150px;
+            color: #404040;
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 50px;
+            border-top: 135px;
+            padding-left: 25px;
+            margin-bottom: 35px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: #808080;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        h3 {
+            width: 300px;
+            margin-left: 38px;
+            color: #404040;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 40px;
+            box-sizing: border-box;
+            margin-bottom: 40px;
+        }
+
+        h4 {
+            width: 180px;
+            height: 84px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 28px;
+            color: #262626;
+        }
+
+        .caption {
+            box-sizing: border-box;
+            width: 235px;
+            height: 60px;
+            margin-top: 15px;
+            margin-left: auto;
+            margin-right: 15px;
+            margin-bottom: 10px;
+            color: #999999;
+            font-size: 14px;
+            line-height: 19px;
+            font-weight: 400;
+        }
+
+        #photoinfo {
+            width: 360px;
+            height: 78px;
+            margin-top: 20px;
+            padding-left: 8px;
+            margin-bottom: 74px;
+            box-sizing: border-box;
+        }
+
+        .date {
+            margin-top: 10px;
+            margin-right: 7px;
+            display: inline-block;
+        }
+
+        .information {
+            position: absolute;
+            top: 230px;
+            left: 70px;
+            display: flex;
+            width: 250px;
+            height: 190px;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: space-between;
+        }
+
+        .information .new-flag {
+            background-color: #DA1F0D;
+            padding: 3px;
+            display: inline-block;
+            font-size: 12px;
+            color: #fff;
+            margin-right: 7px;
+            position: absolute;
+            right: 100%;
+        }
+
+        .information .new-flag-block {
+            position: relative;
+        }
+
+        .information span {
+            box-sizing: border-box;
+            display:inline-block;
+            width:120px;
+            height:24px;
+            color: #808080;
+            font-size: 18px;
+            line-height: 18px;
+            margin-bottom: 15px;
+        }
+
+        .information2 {
+            position: absolute;
+            top: 420px;
+            left: 70px;
+            display: flex;
+            width: 250px;
+            height: 190px;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: space-between;
+        }
+
+        .information2 span {
+            box-sizing: border-box;
+            display:inline-block;
+            width:200px;
+            height:24px;
+            color: #808080;
+            font-size: 18px;
+            line-height: 18px;
+            margin-bottom: 15px;
+    </style>
+
+<body>
+    <div style="width: 375px;
+        height: auto;
+        background-color: #F1F1F1;
+        box-sizing: border-box;
+    ">
+        <div id="header">
+            <div class="logo"><img src="./twreporter-logo.svg" style=width:70%;height:70%;></div>
+            <div class="hamburger">
+                <div></div>
+                <div style=height:2px;></div>
+                <div></div>
+            </div>
+        </div>
+
+        <p style="
+            font-family: Noto Sans TC;
+            font-weight:700;
+            line-height:50px;
+            font-size:16px;
+            display:block;
+            padding-left: 32px;">
+            Reporter Saturday Features</p>
+        <h1>【山思而行】登山中的死亡，對生命的凝視</h1>
+        <img src="./hero-image-mobile.jpg" style="width:375px;height:253px;">
+        <h2 id=photoinfo>登上山峰之途，就是在死亡的陰影之下，動用自身全部的感官與技藝，設法避開那些遭致危機的陷阱。圖為2016年2月，一支國際登山隊正跨越珠穆朗瑪峰基地營附近的冰川。（攝影／AP／Tashi
+            Sherpa／達志影像）
+        </h2>
+        <div class="link-top">
+            <p style="width: 80px;
+            height: 22px;
+            color: #A67A44;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            font-family: Noto Sans TC;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 17px;
+            box-sizing: border-box;">環境・教育</p>
+        </div>
+
+        <div class="link-top distance">
+            <h2 class=date>刊出日期</h2>
+            <h2 class=date>2020/2/28</h2>
+        </div>
+        <div style="margin-left: 36px;
+            margin-right: 5px;
+            padding: 6px 12px;
+            border: 1px solid #808080;
+            border-radius: 30px;
+            color: #808080;
+            font-size: 14px;
+            line-height: 19px;
+            display: inline-block;
+            cursor: pointer;
+        ">
+            #體育
+        </div>
+        <div style="
+            margin-right: 5px;
+            padding: 6px 12px;
+            border: 1px solid #808080;
+            border-radius: 30px;
+            color: #808080;
+            font-size: 14px;
+            line-height: 19px;
+            display: inline-block;
+            cursor: pointer;
+        ">
+            #山思而行
+        </div>
+        <div class="link-bottom"></div>
+        <div class="share">
+            <div><img src="./add-bookmark-mobile.svg" style=width:36px;height:36px;></div>
+            <div><img src="./tool-text.svg" style=width:36px;height:36px;></div>
+            <div><img src="./tool-print.svg" style=width:36px;height:36px;></div>
+            <div><img src="./share-fb.svg" style=width:36px;height:36px;></div>
+            <div><img src="./share-line.svg" style=width:36px;height:36px;></div>
+            <div><img src="./share-twitter.svg" style=width:36px;height:36px;></div>
+        </div>
+        <h3>講到登山，普遍的印象可能是壯闊的山景，雲海朝霞萬丈金芒；也可能是山上人與人之間的情誼，過地形時伸手扶一把，或濕冷雨天一碗熱呼呼的泡麵。我們在山中感受生命各種美好，汲取養分。就算是逆境，痛苦會過去，美會留下，回到人間後依舊能量滿滿再度出發。
+        </h3>
+        <h3>做為人，不知為何，我們傾向記憶美好，卻遺忘過程的苦痛。但我卻想，這是否讓我們理解、記憶一件事情性質的方式，也隨之產生偏誤？</h3>
+        <h3>我想說的是，登山是件會死人的運動。</h3>
+        <h3 class="dp-inlineblock">
+            某程度上，登上山巔之途，就是在死亡的陰影之下，動用自身全部的感官與技藝，設法避開那些遭致危機的陷阱。這樣的經驗本身，就是一種回報，高處的風景與抵達最高點的滿足，則是額外的嘉獎。</h3>
+        <h3>那是個風和日麗的早晨，我跟阿果從標高5,600公尺的馬卡魯峰前進基地營帳篷中醒來。我倆前一天剛攀升至7,150公尺處進行適應攀登並下山，往後一週將是一系列壞天氣週期的到來，所以我們正準備迎接休息日的放鬆作息。
+        </h3>
+        <h3>慢慢踱進餐廳帳，吃完千篇一律的鬆餅加煎蛋，正想放個音樂泡杯咖啡，這時外面有人叫我。是Lakpa。</h3>
+        <h3>Lakpa是隔壁營區的商業團"Pioneer Adventure"的老闆，今年除了我跟阿果，馬卡魯峰這裡還有同樣來自台灣的登山者三條魚，她就在這個隊伍中。</h3>
+        <h3 style=margin-bottom:60px;>原本以為Lakpa是來約我們晚上去他們隊上吃個飯之類的，興高采烈的走出去跟他打招呼，沒想到他表情挺嚴肅：</h3>
+        <img src="./image-1.jpg">
+        <div class="caption">2017年3月，一隊登山者朝向尼泊爾羅布崎的登山營地前進。（攝影／AP／Tashi Sherpa／達志影像）</div>
+
+        <div
+            style="width:235px;height:34px;margin-left:auto;margin-right:15px;border-top: solid #D0A67D 1.5px;box-sizing:border-box;">
+        </div>
+        <h3>其實我們也常忽略，就算我們將自己關在由水泥與文明構成的防護罩中，離野性的大自然遠遠的，各種意外還是可能在不經意間降臨。但我們卻很容易欺騙自己，在日常文明生活中，死亡離我們很遠。加上華人文化將生死視作忌諱而不與談論，所以大多數人其實並不真正意識到，死亡其實比我們想像中靠近。
+        </h3>
+        <h3>我真正意識到這件事情是2013年，那年我在當兵，因為身體背面一個莫名的黑色凸起去看醫生。原本以為是痣，切掉就好了。結果醫生一看面色凝重：「你這個可能是黑色素瘤，得趕快預約開刀之後做切片檢查。」我一開始還想說那啥，不就是個小肉瘤嗎？結果一google之下，發現如果真的是黑色素瘤，我活超過3年的機率不到10%。
+        </h3>
+        <h3>當然後來切片檢查是良性，切掉就沒事了。但這件事情某程度上改變了我的世界觀。在熱愛的事情上投注生命與熱情，就算有其風險，依舊要直面死亡。如此，也才是真正認真的直面生命。</h3>
+        <h3>生命有各種路徑與選擇，60億人也許有60億種人生樣態。重要的，是釐清並接受，自己走在怎樣的生命之道上。若能無悔，就是一種幸運。這篇文章，與其說是寫給不特定受眾，不如說是寫給自己。</h3>
+        <h3>自開始登山並投入海外攀登以來，隨著逐漸深入，難免就有愈多認識的人永遠留在了山上。問我怎麼去看待這些逝去？也許有些沉重，但更多的是祝福。</h3>
+        <p
+            style="width:86px;height: 26px;font-weight: 400;font-size: 20px;line-height: 28px;margin-top: 80px;padding-left: 38px;color:#808080;margin-bottom: 30px;">
+            相關文章</p>
+        <div style="width:350px;height:200px;position: relative;left:13px;border-bottom: solid #D0D0D0 1.5px;">
+            <div style="position:absolute;top:19px;left:25px;">
+                <p style="font-size: 14px;font-weight: 700;line-height: 28px;color:#A67A44">環境・教育</p>
+            </div>
+            <div style="position: absolute;top:52px;left:25px;display: inline-block;">
+                <h4>探險一步、前進一步──呂忠翰、張元植挑戰台灣人首登「野蠻巨峰」K2</h4>
+            </div>
+            <div style="position: absolute;bottom:20px;left:27px;height:26px;width:84px;display:inline-block;">
+                <p style="font-size:12px;line-height:24px;font-weight: 700;color:#D0D0D0;">2019/4/26</p>
+            </div>
+            <div
+                style="position: absolute;top:75px;right:2px;width:144px;height:89px;display:inline-block;box-sizing:border-box;">
+                <img src="./image2.jpg" style="width:124px;height:79px;box-sizing:border-box;"></div>
+        </div>
+        <div style="width:350px;height:200px;position: relative;left:13px;border-bottom: solid #D0D0D0 1.5px;">
+            <div style="position:absolute;top:19px;left:25px;">
+                <p style="font-size: 14px;font-weight: 700;line-height: 28px;color:#A67A44">環境・教育</p>
+            </div>
+            <div style="position: absolute;top:52px;left:25px;display: inline-block;">
+                <h4>守在半山腰的指揮靈魂 「8千公尺英雄」推手連志展</h4>
+            </div>
+            <div style="position: absolute;bottom:20px;left:27px;height:26px;width:84px;display:inline-block;">
+                <p style="font-size:12px;line-height:24px;font-weight: 700;color:#D0D0D0;">2019/4/26</p>
+            </div>
+            <div
+                style="position: absolute;top:75px;right:2px;width:144px;height:89px;display:inline-block;box-sizing:border-box;">
+                <img src="./image3.jpg" style="width:124px;height:79px;box-sizing:border-box;"></div>
+        </div>
+        <div style="width:350px;height:200px;position: relative;left:13px;border-bottom: solid #D0D0D0 1.5px;">
+            <div style="position:absolute;top:19px;left:25px;">
+                <p style="font-size: 14px;font-weight: 700;line-height: 28px;color:#A67A44">環境・教育</p>
+            </div>
+            <div style="position: absolute;top:52px;left:25px;display: inline-block;">
+                <h4>山，在這裡──紙上攻頂14座8千公尺高山</h4>
+            </div>
+            <div style="position: absolute;bottom:20px;left:27px;height:26px;width:84px;display:inline-block;">
+                <p style="font-size:12px;line-height:24px;font-weight: 700;color:#D0D0D0;">2019/4/26</p>
+            </div>
+            <div
+                style="position: absolute;top:75px;right:2px;width:144px;height:89px;display:inline-block;box-sizing:border-box;">
+                <img src="./image4.jpg" style="width:124px;height:79px;box-sizing:border-box;"></div>
+        </div>
+        <div style="width:350px;height:200px;position: relative;left:13px;border-bottom: solid #D0D0D0 1.5px;">
+            <div style="position:absolute;top:19px;left:25px;">
+                <p style="font-size: 14px;font-weight: 700;line-height: 28px;color:#A67A44">環境・教育</p>
+            </div>
+            <div style="position: absolute;top:52px;left:25px;display: inline-block;">
+                <h4>【山思而行】高海拔的氧氣，就像自由</h4>
+            </div>
+            <div style="position: absolute;bottom:20px;left:27px;height:26px;width:84px;display:inline-block;">
+                <p style="font-size:12px;line-height:24px;font-weight: 700;color:#D0D0D0;">2019/4/26</p>
+            </div>
+            <div
+                style="position: absolute;top:75px;right:2px;width:144px;height:89px;display:inline-block;box-sizing:border-box;">
+                <img src="./image5.jpg" style="width:124px;height:79px;box-sizing:border-box;"></div>
+        </div>
+        <div
+            style="background-color: #FFFFFF;width:375px;height:666px;margin-top: 80px;position: relative;box-sizing:border-box;">
+            <div style="width:300px;height:110px;position: absolute;top:60px;left:37px;box-sizing:border-box;">
+                <p style="font-size: 16px;line-height: 26px;font-weight:400;color:#808080">
+                    2015年12月《報導者》正式上線，稟持深度、開放、非營利的精神，致力於公共領域調查報導，為讀者持續追蹤各項重要議題，共同打造多元的社會與媒體環境。</p>
+            </div>
+            <div class="information">
+                <span>關於我們</span>
+                <span>聯絡我們</span>
+                <span>作者群</span>
+                <div class="new-flag-block">
+                    <div class="new-flag">New</div><span>影響力報告</span>
+                </div>
+                <span>隱私政策</span>
+                <span>許可協議</span>
+                <span>捐款徵信</span>
+                <span>常見問題</span>
+            </div>
+            <div class="information2">
+                <span>加入我們</span>
+                <span>訂閱電子報</span>
+                <span>報導者基金會新聞專區</span>
+
+            </div>
+            <div class="share2">
+            <div><img src="./facebook.png" style=width:30px;height:30px;></div>
+            <div><img src="./instgram.png" style=width:30px;height:30px;></div>
+            <div><img src="./line.png" style=width:30px;height:30px;></div>
+            <div><img src="./Screen Shot 2020-11-03 at 4.10 1.png" style=width:30px;height:30px;></div>
+            <div><img src="./Vector.png" style=width:25px;height:25px;></div>
+            <div><img src="./Rectangle.png" style=width:25px;height:25px;></div>
+        </div>
+    </div>
+</body>
+</head>
+
+</html>
